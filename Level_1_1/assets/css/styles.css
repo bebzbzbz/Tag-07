@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+form {
+    fieldset {
+        border: none;
+        width: 33%;
+        margin: 3rem auto;
+        font-family: Helvetica, sans-serif;
+        font-size: 13px;
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: .2rem;
+
+            span {
+                color: #f00;
+            }
+        }
+
+        input, textarea, select {
+            width: 100%;
+            border: 1px solid #cacaca;
+            margin-bottom: .5rem;
+            padding: .4rem;
+        }
+
+        div.name input {
+            width: 49%;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(113, 168, 122);
+            color: #fff;
+            border: none;
+            padding: .5rem 0;
+        }
+    }
+}

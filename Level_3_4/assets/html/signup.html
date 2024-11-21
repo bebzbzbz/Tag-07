@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms: Bonusaufgabe</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="app signup">
+        <a href="intro.html" class="back"><img src="../img/back.png" alt="Back"></a>
+
+        <img src="../img/undraw_online_stats_0g94.svg.png" alt="Monitor vector artwork" class="vectorImage">
+
+        <div class="textbox">
+            <div class="accents">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot bar"></div>
+            </div>
+
+            <h1>Sign Up</h1>
+            
+            <form>
+                <fieldset>
+                    <div class="textInputs">
+                        <label for="name">Full Name</label>
+                        <input type="text" name="name" id="name" placeholder="Peter Parker">
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="peterparker@explanation.com">
+
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+
+                    <div class="terms">
+                        <input type="checkbox" name="termsConditions" id="termsConditions">
+                        <label for="termsConditions">I agree to the <a href="">Terms and Conditions</a> and <a href="">Privacy Policy</a></label>
+                    </div>
+
+                    <div>
+                        <input type="button" value="Create Account" class="forward">
+                        <span>or</span>
+                        <input type="button" value="Sign up with Google" class="forward">
+                        <span>You already have an account? <a href="signin.html">Sign in</a></span>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

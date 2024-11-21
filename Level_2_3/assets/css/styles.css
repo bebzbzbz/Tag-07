@@ -1,0 +1,10 @@
+fieldset {
+    div {
+        margin-bottom: .5rem;
+        ;
+        label:first-child {
+            display: inline-block;
+            width: 10rem;
+        }
+    }
+}

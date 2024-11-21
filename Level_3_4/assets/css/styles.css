@@ -1,0 +1,205 @@
+@font-face {
+    font-family: "Poppins Regular";
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Poppins Bold";
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: "Poppins Light";
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div.app {
+    width: 360px;
+    height: 640px;
+    border: 1px solid #000;
+    border-radius: 16px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: "Poppins Regular";
+    text-align: center;
+
+    .forward {
+        background-color: #6C63FF;
+        display: block;
+        color: #fff;
+        width: 115px;
+        height: 44px;
+        border: none;
+        border-radius: 80px;
+        padding: 12px 50px;
+        box-shadow: 0 0 4px #3F3D56;
+        position: absolute;
+        bottom: 50px;
+        z-index: 999;
+
+        img {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    a.back, a.back img {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 2px;
+        left: 0;
+    }
+
+    img.vectorImage {
+        position: absolute;
+
+        .intro & {
+            top: 130px;
+        }
+        .signup & {
+            top: 20px;
+            width: 155px;
+        }
+    }
+
+    div.textbox {
+        padding: 1rem;
+        background-color: #F6F6F6;
+        box-shadow: 0 0 5px #88869D;
+        border-radius: 16px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+        div.intro & {
+            height: 315px;
+        }
+        div.signup & {
+            height: 525px;
+        }
+
+        div.accents {
+            display: flex;
+            margin: 0 auto;
+            margin-bottom: .5rem;
+            justify-content: center;
+
+            div.dot {
+                background-color: #ababab;
+                width: 5px;
+                height: 5px;
+                border-radius: 80px;
+
+                &.bar {
+                    background-color: #6C63FF;
+                    width: 20px;
+                    height: 5px;
+                }
+
+                &:not(:last-of-type) {
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+
+    h1 {
+        font-family: "Poppins Bold";
+        font-size: 19px;
+        padding: 0 2rem;
+        margin-bottom: 1rem;
+
+        .intro & {
+            color: #6C63FF;
+            margin-top: 3rem;
+        }
+    }
+
+    img.logo {
+        .index & {
+            width: 100px;
+            height: 100px;
+        }
+        .intro & {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 20px;
+        }
+    }
+
+    form {
+        fieldset {
+            border: none;
+            font-size: 13.5px;
+
+            .textInputs {
+                label {
+                    display: block;
+                    text-align: left;
+                    font-size: 16px;
+                }
+                input {
+                    display: block;
+                    width: 100%;
+                    border: none;
+                    border-radius: 7px;
+                    padding: 5px 8px;
+                    color: #757575;
+                    margin-bottom: 1rem;
+                    font-family: "Poppins Light";
+                }
+            }
+
+            .terms {
+                text-align: left;
+                margin-bottom: 2rem;
+            }
+
+            input[type="button"] {
+                display: block;
+                position: initial;
+                width: 224px;
+                height: 40px;
+                border-radius: 6px;
+                font-family: "Poppins Light";
+                padding-top: 10px;
+                margin: .5rem auto;
+                z-index: 999;
+            }
+            span:first-of-type {
+                color: #808080;
+                position: relative;
+
+                &::before {
+                    content:"";
+                    display: block;
+                    border-top: 2px solid #3F3D56;
+                    width: 150px;
+                    height: 2px;
+                    position: absolute;
+                    top: 9px;
+                }
+                &::after {
+                    content:"";
+                    display: block;
+                    border-top: 2px solid #3F3D56;
+                    width: 150px;
+                    height: 2px;
+                    position: absolute;
+                    top: 9px;
+                    left: 20px;
+                }
+            }
+        }
+    }
+}

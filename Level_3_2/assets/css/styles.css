@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.fullForm {
+    width: 35%;
+    background-color: rgb(32, 41, 35);
+    margin: 3rem auto;
+    text-align: center;
+    padding: 1rem;
+
+    .buttons {
+        margin-bottom: 2rem;
+        display: flex;
+
+        a {
+            display: inline-block;
+            width: 50%;
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem;
+            transition: background-color .5s ease-in-out;
+
+            &.current {
+                background-color: rgb(92, 168, 57);
+                pointer-events: none;
+            }
+
+            &:hover {
+                background-color: rgb(55, 218, 117);
+            }
+        }
+    }
+
+    h1 {
+        color: #fff;
+        margin-bottom: 2rem;
+    }
+
+    fieldset {
+        border: none;
+
+        a {
+            display: block;
+            color: rgb(92, 168, 57);
+            margin-bottom: 1rem;
+            font-size: .8rem;
+            text-align: right;
+        }
+
+        input {
+            width: 100%;
+            background-color: transparent;
+            padding: .5rem;
+            margin-bottom: 1.5rem;
+
+            &[type="submit"] {
+                background-color: rgb(92, 168, 57);
+                border: none;
+                text-transform: uppercase;
+                color: #fff;
+                padding: 1rem;
+                font-size: 1.3rem;
+                font-weight: bold;
+                cursor: pointer;
+                letter-spacing: .3rem;
+                transition: background-color .5s ease-in-out;
+
+                &:hover {
+                    background-color: rgb(55, 218, 117);
+                }
+            }
+        }
+        
+        .name {
+            display: flex;
+
+            input {
+                width: 50%;
+            }
+        }
+    }
+}
