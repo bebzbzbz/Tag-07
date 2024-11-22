@@ -10,19 +10,19 @@
     <form>
         <fieldset>
             <legend>Register form</legend>
-            <div class="name">
+            <div>
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" placeholder="Name">
             </div>
-            <div class="surname">
+            <div>
                 <label for="surname">Surname</label>
                 <input type="text" name="surname" id="surname" placeholder="Surname">
             </div>
-            <div class="email">
+            <div>
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Email">
             </div>
-            <div class="gender">
+            <div>
                 <label for="gender">Gender</label>
 
                 <div id="gender">
@@ -34,11 +34,11 @@
                     <input type="radio" name="gender" id="genderNonbinary" value="Nonbinary">
                 </div>
             </div>
-            <div class="picture">
+            <div>
                 <label for="picture">Picture</label>
                 <input type="file" name="picture" id="picture">
             </div>
-            <div class="country">
+            <div>
                 <label for="country">Country</label>
 
                 <select name="country" id="country">
@@ -47,10 +47,10 @@
                     <option value="USA">USA</option>
                 </select>
             </div>
-            <div class="languages">
-                <label for="languages">Preferred languages</label>
+            <div>
+                <label for="language">Preferred languages</label>
 
-                <select name="languages" id="languages" multiple>
+                <select name="language[]" id="language" multiple>
                     <option value="HTML">HTML</option>
                     <option value="CSS">CSS</option>
                     <option value="JS">JS</option>
@@ -58,15 +58,15 @@
                 </select>
                 <span>(To choose more than one use cmd key)</span>
             </div>
-            <div class="field">
+            <div>
                 <label for="fieldOfActivity">Field of activity</label>
 
                 <div id="fieldOfActivity">
-                    <input type="checkbox" name="field" id="IT" value="IT">
+                    <input type="checkbox" name="field[]" id="IT" value="IT">
                     <label for="IT">IT</label>
-                    <input type="checkbox" name="field" id="design" value="design">
+                    <input type="checkbox" name="field[]" id="design" value="design">
                     <label for="design">Design</label>
-                    <input type="checkbox" name="field" id="other" value="other">
+                    <input type="checkbox" name="field[]" id="other" value="other">
                     <label for="other">Other</label>
                 </div>
             </div>
