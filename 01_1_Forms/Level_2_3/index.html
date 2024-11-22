@@ -23,14 +23,16 @@
                 <input type="email" name="email" id="email" placeholder="Email">
             </div>
             <div class="gender">
-                <label>Gender</label>
+                <label for="gender">Gender</label>
 
-                <label for="genderFemale">Female</label>
-                <input type="radio" name="gender" id="genderFemale" value="Female">
-                <label for="genderMale">Male</label>
-                <input type="radio" name="gender" id="genderMale" value="Male">
-                <label for="genderNonbinary">Nonbinary</label>
-                <input type="radio" name="gender" id="genderNonbinary" value="Nonbinary">
+                <div id="gender">
+                    <label for="genderFemale">Female</label>
+                    <input type="radio" name="gender" id="genderFemale" value="Female">
+                    <label for="genderMale">Male</label>
+                    <input type="radio" name="gender" id="genderMale" value="Male">
+                    <label for="genderNonbinary">Nonbinary</label>
+                    <input type="radio" name="gender" id="genderNonbinary" value="Nonbinary">
+                </div>
             </div>
             <div class="picture">
                 <label for="picture">Picture</label>
@@ -57,14 +59,16 @@
                 <span>(To choose more than one use cmd key)</span>
             </div>
             <div class="field">
-                <label for="">Field of activity</label>
+                <label for="fieldOfActivity">Field of activity</label>
 
-                <input type="checkbox" name="field" id="IT" value="IT">
-                <label for="IT">IT</label>
-                <input type="checkbox" name="field" id="design" value="design">
-                <label for="design">Design</label>
-                <input type="checkbox" name="field" id="other" value="other">
-                <label for="other">Other</label>
+                <div id="fieldOfActivity">
+                    <input type="checkbox" name="field" id="IT" value="IT">
+                    <label for="IT">IT</label>
+                    <input type="checkbox" name="field" id="design" value="design">
+                    <label for="design">Design</label>
+                    <input type="checkbox" name="field" id="other" value="other">
+                    <label for="other">Other</label>
+                </div>
             </div>
             <div>
                 <input type="submit" value="Send">

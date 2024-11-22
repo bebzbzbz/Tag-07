@@ -1,10 +1,14 @@
 fieldset {
-    div {
+    & > div {
         margin-bottom: .5rem;
-        ;
-        label:first-child {
+        
+        & > label:first-child {
             display: inline-block;
             width: 10rem;
+        }
+
+        div {
+            display: inline;
         }
     }
 }
